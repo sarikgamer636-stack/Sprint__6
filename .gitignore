@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+ENV/
+.env
+
+# Pytest & Allure
+.pytest_cache/
+allure_results/
+.allure/
+
+# IDE
+.idea/
+.vscode/
+*.iml
+*.iws
+*.ipr
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Browser drivers
+geckodriver.log
+chromedriver.log
+*.log
+
+# Other
+*.tmp
+*.bak
