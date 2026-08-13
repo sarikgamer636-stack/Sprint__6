@@ -48,3 +48,16 @@ class MainPage(BasePage):
     def click_yandex_logo(self):
         logo = self.find_clickable(self.YANDEX_LOGO)
         self.driver.execute_script("arguments[0].click();", logo)
+
+    @allure.step("Получаем текущий URL")
+    def get_current_url(self):
+        return self.driver.current_url
+
+    @allure.step("Переключаемся на новое окно")
+    def switch_to_new_window(self):
+        self.driver.switch_to.window(self.driver.window_handles[1])
+
+    @allure.step("Закрываем текущее окно и возвращаемся на исходное")
+    def close_current_window_and_switch_back(self):
+        self.driver.close()
+        self.driver.switch_to.window(self.driver.window_handles[0])

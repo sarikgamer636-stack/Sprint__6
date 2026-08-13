@@ -13,7 +13,8 @@ ENV/
 # Pytest & Allure
 .pytest_cache/
 allure_results/
-.allure/
+#allure-report/
+#.allure/
 
 # IDE
 .idea/
